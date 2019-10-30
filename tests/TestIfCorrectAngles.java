@@ -7,13 +7,13 @@ public class TestIfCorrectAngles {
     private AnalogClock analogClock = new AnalogClock();
 
     @Test
-    public void AngleWhenMinuteHandHasNotPassed12OClock() {
+    public void AngleWhenMinuteHandHasNotPassed12() {
         assertEquals(75, analogClock.CalculateAngle(3, 30));
         assertEquals(75, analogClock.CalculateAngle(15, 30));
     }
 
     @Test
-    public void AngleWhenMinuteHandHasPassed12OClock() {
+    public void AngleWhenMinuteHandHasPassed12() {
         assertEquals(325, analogClock.CalculateAngle(3, 10));
         assertEquals(325, analogClock.CalculateAngle(15, 10));
     }
