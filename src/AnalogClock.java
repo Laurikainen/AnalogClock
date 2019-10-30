@@ -39,7 +39,8 @@ public class AnalogClock {
 
             // Mitu kraadi on tunniseier liikunud kahe erineva tunni vahel (näiteks kahe ja kolme vahel)
             int angleOfHourHandByMinutesPassed = Math.round((oneHourAngle * minutes) / 60);
-
+            
+            // Seierite vahelise nurga arvutamine
             if (minutes < hours * oneHourMinutes) {
                 angle = ((60 - (hours * oneHourMinutes) + minutes) * oneMinuteAngle) - angleOfHourHandByMinutesPassed;
             } else {
